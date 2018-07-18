@@ -1,0 +1,109 @@
+.body-text {
+  font-family: sans-serif;
+  line-height: 1.55;
+  color: #404040;
+  margin-bottom: 15px;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  color: white;
+  letter-spacing: 5px;
+  font-weight: lighter;
+  font-size: calc(30px + 2.5vw);
+  transition: text-shadow 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+/* global styles */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: lighter;
+  font-family: "Indie Flower";
+}
+.wrapper {
+  padding-top: 70px;
+}
+.flex-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: max-content;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  overflow: hidden;
+  position: relative;
+}
+.flex-child {
+  width: 500px;
+  height: max-content;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.bottom-line {
+  width: 80%;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
+}
+.clickable:hover,
+button:hover {
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+textarea:focus,
+input:focus,
+button:active {
+  outline: none;
+}
+@media (max-width: 700px) {
+  .flex-parent {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.article-heading {
+  text-align: center;
+}
+
+.shadow {
+  text-shadow: 0px 0px 100px lightgreen;
+}
+
+/*Header styles*/
+
+.banner {
+  width: 100%;
+  display: block;
+  transition: all 1s ease-out;
+}
+
+.active:hover {
+  text-shadow: 0px 0px 10px;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .tagline {
+    font-size: 36px;
+  }
+}
+@media (max-width: 500px) {
+  .tagline {
+    font-size: 24px;
+  }
+}
