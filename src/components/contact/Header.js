@@ -1,5 +1,5 @@
 import React from "react";
-import { scrollable } from "./../../helpers";
+import { scroller } from "./../../helpers";
 
 const styles = {
   flexParent: {
@@ -27,7 +27,7 @@ const Header = props => (
         src={require("./../../assets/images/contact/reach-out.jpg")}
       />
     </div>
-    <p className="tagline active" onClick={scrollable}>
+    <p className="tagline active" onClick={() => scroller("contact-form")}>
       CONTACT US
     </p>
   </div>

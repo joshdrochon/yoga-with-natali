@@ -30,14 +30,14 @@ const AboutView2 = () => {
       </style>
       <article className="flex-child">
         <span id="envelope">
-          <h4>
+          <p className="body-text">
             <span id="p-start">Natali</span>
             {content.about.p1}
-          </h4>
+          </p>
           <br />
-          <h4>{content.about.p2}</h4>
+          <p className="body-text">{content.about.p2}</p>
           <br />
-          <h4>{content.about.p3}</h4>
+          <p className="body-text">{content.about.p3}</p>
           <br />
         </span>
       </article>

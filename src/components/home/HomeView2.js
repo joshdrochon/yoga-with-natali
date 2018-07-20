@@ -13,14 +13,14 @@ const styles = {
     position: "relative"
   },
   flexChildLeft: {
-    width: "700px",
+    maxWidth: "700px",
     height: "max-content",
     textAlign: "justify",
     margin: "10px",
     textJustify: "inter-word"
   },
   flexChildRight: {
-    width: "700px",
+    maxWidth: "700px",
     height: "max-content",
     textAlign: "center",
     margin: "10px",

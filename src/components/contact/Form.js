@@ -1,15 +1,15 @@
 import React from "react";
 
 const Form = () => (
-  <form id="form">
+  <form id="contact-form">
     <style>
       {`
-        #form{
+        #contact-form{
           padding: 10px;
           margin: auto;
           background-color: #d9c5c7;
         }
-        #form input, textarea{
+        #contact-form input, textarea{
           display: block;
           border: none;
           width: 95%;
@@ -19,7 +19,7 @@ const Form = () => (
           transition: transform .1s;
           font-family: 'indie flower';
         }
-        #form textarea{
+        #contact-form textarea{
           height: 200px;
         }
         #comment-btn{

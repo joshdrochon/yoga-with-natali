@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import Header from "./Header";
 import HomeView1 from "./HomeView1";
 import HomeView2 from "./HomeView2";
-import { fetchQuote } from "./../../helpers";
 
 export default class Home extends Component {
   state = {
@@ -15,13 +14,12 @@ export default class Home extends Component {
     });
   };
 
-  componentDidMount() {
-    fetchQuote();
-  }
   render() {
+    const { opacity } = this.state;
+
     return (
       <Fragment>
-        <Header fadeIn={this.fadeIn} opacity={this.state.opacity} />
+        <Header fadeIn={this.fadeIn} opacity={opacity} />
         <HomeView1 />
         <HomeView2 />
       </Fragment>
