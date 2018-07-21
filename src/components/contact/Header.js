@@ -27,7 +27,11 @@ const Header = props => (
         src={require("./../../assets/images/contact/reach-out.jpg")}
       />
     </div>
-    <p className="tagline active" onClick={() => scroller("contact-form")}>
+    <p
+      id="contact-tagline"
+      className="tagline active"
+      onClick={() => scroller()}
+    >
       CONTACT US
     </p>
   </div>

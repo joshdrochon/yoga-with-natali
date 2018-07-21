@@ -1,41 +1,8 @@
 import React from "react";
 import tasteTesting from "./../../assets/images/natali-in-bali.jpeg";
 
-const styles = {
-  flexParent: {
-    display: "flex",
-    flexWrap: "wrap",
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    paddingTop: "70px",
-    paddingBottom: "70px",
-    position: "relative"
-  },
-  flexChildLeft: {
-    maxWidth: "700px",
-    height: "max-content",
-    textAlign: "justify",
-    margin: "10px",
-    textJustify: "inter-word"
-  },
-  flexChildRight: {
-    maxWidth: "700px",
-    height: "max-content",
-    textAlign: "center",
-    margin: "10px",
-    overflow: "hidden"
-  },
-  hr: {
-    width: "80%",
-    margin: "0px",
-    position: "absolute",
-    bottom: "0"
-  }
-};
-
 const HomeView1 = () => (
-  <div style={styles.flexParent}>
+  <div className="flex-parent">
     <style>
       {`
         #show-quote{
@@ -50,34 +17,38 @@ const HomeView1 = () => (
         }
       `}
     </style>
-    <div style={styles.flexChildLeft}>
+    <div className="article">
       <h2 className="article-heading">Get to know Natali</h2>
-      <p className="body-text">
-        Natali is a world traverer, yoga instructor and professional taste
-        tester! Lorem ipsum dolor sit amet, vis id essent delenit impedit, ius
-        ei impetus commune mandamus. Eam ut adhuc utinam. Cum an eius partiendo.
-        No pro congue honestatis. Animal fastidii vel te, amet scriptorem ex
-        vis, cum cu sale intellegat vituperatoribus. Lorem ipsum dolor sit amet,
-      </p>
-      <p className="body-text">
-        impedit, ius ei impetus commune mandamus. Eam ut adhuc utinam. Cum an
-        eius partiendo. No pro congue honestatis. Animal fastidii vel te, amet
-        scriptorem ex vis, cum cu sale intellegat vituperatoribus. Lorem ipsum
-        dolor sit amet, vis id essent delenit impedit, ius ei impetus commune
-        mandamus. Eam ut adhuc utinam. Cum an eius partiendo. No pro congue
-      </p>
-      <p className="body-text">
-        honestatis. Animal fastidii vel te, amet scriptorem ex vis, cum cu sale
-        intellegat vituperatoribus. Lorem ipsum dolor sit amet, vis id essent
-        delenit impedit, ius ei impetus commune mandamus. Eam ut adhuc utinam.
-        Cum an eius partiendo. No pro congue honestatis. Animal fastidii vel te,
-        amet scriptorem ex vis, cum cu sale intellegat vituperatoribus.
-      </p>
+      <span className="body-text-wrapper">
+        <p>
+          Natali is a world traverer, yoga instructor and professional taste
+          tester! Lorem ipsum dolor sit amet, vis id essent delenit impedit, ius
+          ei impetus commune mandamus. Eam ut adhuc utinam. Cum an eius
+          partiendo. No pro congue honestatis. Animal fastidii vel te, amet
+          scriptorem ex vis, cum cu sale intellegat vituperatoribus. Lorem ipsum
+          dolor sit amet,
+        </p>
+        <p>
+          impedit, ius ei impetus commune mandamus. Eam ut adhuc utinam. Cum an
+          eius partiendo. No pro congue honestatis. Animal fastidii vel te, amet
+          scriptorem ex vis, cum cu sale intellegat vituperatoribus. Lorem ipsum
+          dolor sit amet, vis id essent delenit impedit, ius ei impetus commune
+          mandamus. Eam ut adhuc utinam. Cum an eius partiendo. No pro congue
+        </p>
+        <p>
+          honestatis. Animal fastidii vel te, amet scriptorem ex vis, cum cu
+          sale intellegat vituperatoribus. Lorem ipsum dolor sit amet, vis id
+          essent delenit impedit, ius ei impetus commune mandamus. Eam ut adhuc
+          utinam. Cum an eius partiendo. No pro congue honestatis. Animal
+          fastidii vel te, amet scriptorem ex vis, cum cu sale intellegat
+          vituperatoribus.
+        </p>
+      </span>
     </div>
-    <div style={styles.flexChildRight}>
+    <div className="flex-child">
       <img className="taste-testing" src={tasteTesting} />
     </div>
-    <hr style={styles.hr} />
+    <hr className="bottom-line" />
   </div>
 );
 

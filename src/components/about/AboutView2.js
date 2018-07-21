@@ -28,26 +28,26 @@ const AboutView2 = () => {
         }
       `}
       </style>
-      <article className="flex-child">
+      <div className="article">
         <span id="envelope">
-          <p className="body-text">
-            <span id="p-start">Natali</span>
-            {content.about.p1}
-          </p>
-          <br />
-          <p className="body-text">{content.about.p2}</p>
-          <br />
-          <p className="body-text">{content.about.p3}</p>
-          <br />
+          <span className="body-text-wrapper">
+            <p>
+              <span id="p-start">Natali</span>
+              {content.about.p1}
+            </p>
+
+            <p>{content.about.p2}</p>
+
+            <p>{content.about.p3}</p>
+          </span>
         </span>
-      </article>
+      </div>
       <div className="flex-child">
         <img src={zen} alt="zen" />
         <h3>
           "The more you are motivated by love, the more fearless and free your
           action will be."
         </h3>
-        <br />
         <h3>
           <em> ― Dalai Lama</em>
         </h3>

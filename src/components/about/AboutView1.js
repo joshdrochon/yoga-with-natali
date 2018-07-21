@@ -13,6 +13,11 @@ const AboutView1 = () => (
           width: 100%;
           vertical-align: middle;
         }
+
+        @media (max-width: 700px) {
+          #incense{
+            display: none;
+          }
       `}
     </style>
     <div className="flex-child">
@@ -31,7 +36,7 @@ const AboutView1 = () => (
     <div className="flex-child">
       <img id="burning-incense" src={burningIncense} />
     </div>
-    <hr className="bottom-line" />
+    <hr id="incense" className="bottom-line" />
   </div>
 );
 

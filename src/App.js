@@ -44,7 +44,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div className="wrapper-main">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />

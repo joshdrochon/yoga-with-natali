@@ -1,10 +1,14 @@
-.body-text {
+span.body-text-wrapper p {
   font-family: sans-serif;
   line-height: 1.55;
   color: #404040;
   margin-bottom: 15px;
   font-weight: 100;
   font-size: 18px;
+}
+
+.body-text-wrapper p:last-child {
+  margin-bottom: 0px;
 }
 
 .tagline {
@@ -29,7 +33,7 @@
   font-weight: lighter;
   font-family: "Indie Flower";
 }
-.wrapper {
+.wrapper-main {
   padding-top: 70px;
 }
 .flex-parent {
@@ -45,7 +49,7 @@
   position: relative;
 }
 .flex-child {
-  width: 500px;
+  width: 650px;
   height: max-content;
   text-align: center;
   margin: 20px;
@@ -59,6 +63,18 @@
   position: absolute;
   bottom: 0;
 }
+
+.article {
+  width: 650px;
+  height: max-content;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-justify: inter-word;
+}
+
 .clickable:hover,
 button:hover {
   cursor: pointer;
@@ -73,8 +89,15 @@ button:active {
 }
 @media (max-width: 700px) {
   .flex-parent {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .flex-child,
+  .article {
+    margin: 0px;
+  }
+  .bottom-line {
+    width: 93%;
   }
 }
 .article-heading {
@@ -105,5 +128,37 @@ button:active {
 @media (max-width: 500px) {
   .tagline {
     font-size: 24px;
+  }
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery-column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  width: 100%;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-column {
+    flex: 49%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
   }
 }

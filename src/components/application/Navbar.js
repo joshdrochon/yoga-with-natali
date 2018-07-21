@@ -90,6 +90,7 @@ const Navbar = () => (
         cursor: pointer;
       }
       .nav div{
+        opacity: .8;
         width: 100%;
         height: 70px;
         text-align: center;

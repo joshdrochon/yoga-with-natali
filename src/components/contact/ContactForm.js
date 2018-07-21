@@ -1,6 +1,6 @@
 import React from "react";
 
-const Form = () => (
+const ContactForm = () => (
   <form id="contact-form">
     <style>
       {`
@@ -49,4 +49,4 @@ const Form = () => (
   </form>
 );
 
-export default Form;
+export default ContactForm;
