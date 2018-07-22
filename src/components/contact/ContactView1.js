@@ -2,7 +2,7 @@ import React from "react";
 import ContactForm from "./ContactForm";
 
 const ContactView1 = () => (
-  <div className="flex-parent">
+  <div className="flex-parent reverse">
     <style>
       {`
       #contact-view{

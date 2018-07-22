@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Header from "./Header";
 import ContactView1 from "./ContactView1";
+import "./Form.css";
 
 export default class Contact extends Component {
   state = {

@@ -1,0 +1,25 @@
+#contact-form {
+  padding: 10px;
+  margin: auto;
+  background-color: #d9c5c7;
+}
+#contact-form input,
+textarea {
+  display: block;
+  border: none;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 28px;
+  transition: transform 0.1s;
+  font-family: "indie flower";
+}
+#contact-form textarea {
+  height: 200px;
+}
+input:hover,
+textarea:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px;
+  background-color: ghostwhite;
+}

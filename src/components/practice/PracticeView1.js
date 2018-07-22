@@ -31,3 +31,5 @@ const PracticeView1 = () => (
 );
 
 export default PracticeView1;
+
+//horizontal selection menu, with toggle-open as in Give site,
