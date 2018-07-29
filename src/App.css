@@ -27,6 +27,10 @@ span.body-text-wrapper p {
   text-decoration: none;
 }
 
+.articel-heading-1 {
+  font-size: 10px;
+}
+
 /* global styles */
 
 * {
@@ -63,6 +67,13 @@ span.body-text-wrapper p {
 }
 .reverse {
   flex-wrap: wrap-reverse;
+}
+
+.header-container {
+  width: 100%;
+  height: max-content;
+  max-height: 85vh;
+  overflow: hidden;
 }
 
 .bottom-line {
@@ -113,6 +124,11 @@ button:active {
 
 .shadow {
   text-shadow: 0px 0px 100px lightgreen;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
 }
 
 /*Header styles*/
@@ -175,9 +191,12 @@ button:active {
   margin-top: 25px;
   margin-bottom: 20px;
   box-shadow: 5px 5px 10px;
+  font-size: 20px;
+  font-family: cursive;
 }
 .btn-default:active {
   background-color: ghostwhite;
+  outline: none;
   transform: scale(0.96);
   box-shadow: 0px 0px 0px;
 }

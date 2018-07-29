@@ -1,35 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import classes from "./../../assets/images/practice/selectors/classes.png";
-import photography from "./../../assets/images/practice/selectors/photography.png";
-import retreats from "./../../assets/images/practice/selectors/retreats.png";
-import schedule from "./../../assets/images/practice/selectors/schedule.png";
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
+
+let practiceLinks = ["classes", "photography", "retreats", "events"];
 
 const PracticeView1 = () => (
-  <div className="flex-parent">
-    <div className="flex-child">
-      <Link to="/photography">
-        <img src={photography} />
-      </Link>
+  <Fragment>
+    <div className="flex-parent">
+      {practiceLinks.map((link, i) => (
+        <NavLink
+          to={`/${link}`}
+          key={`key-${i.toString()}`}
+          alt="practice"
+          activeClassName="hidden"
+        >
+          {link.toUpperCase()}
+        </NavLink>
+      ))}
     </div>
-    <div className="flex-child">
-      <Link to="#">
-        <img src={classes} />
-      </Link>
+    <div className="practice-container" id="practice-1">
+      <h1>Practice 1</h1>
     </div>
-    <div className="flex-child">
-      <Link to="#">
-        <img src={retreats} />
-      </Link>
+    <div className="practice-container" id="practice-2">
+      <h1>Practice 2</h1>
     </div>
-    <div className="flex-child">
-      <Link to="#">
-        <img src={schedule} />
-      </Link>
+    <div className="practice-container" id="practice-3">
+      <h1>Practice 3</h1>
     </div>
-  </div>
+    <div className="practice-container" id="practice-4">
+      <h1>Practice 4</h1>
+    </div>
+  </Fragment>
 );
 
 export default PracticeView1;
-
-//horizontal selection menu, with toggle-open as in Give site,

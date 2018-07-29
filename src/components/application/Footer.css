@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.copyright {
+  font-family: helvetica;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icons {
+  margin-left: 10px;
+}
+.icon {
+  width: 36px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.icons img {
+  margin-right: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    margin-left: 2px;
+    font-size: 12px;
+  }
+  .footer {
+    justify-content: space-between;
+  }
+}

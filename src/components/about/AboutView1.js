@@ -3,26 +3,8 @@ import burningIncense from "../../assets/images/about/incense.jpg";
 
 const AboutView1 = () => (
   <div className="flex-parent">
-    <style>
-      {`
-        #about-me{
-          font-weight: lighter;
-        }
-        #burning-incense{
-          height: auto;
-          width: 100%;
-          vertical-align: middle;
-        }
-
-        @media (max-width: 700px) {
-          #incense{
-            display: none;
-          }
-      `}
-    </style>
     <div className="flex-child">
-      <h1 id="about-me">GET TO KNOW ME</h1>
-      <h3>Explore. Live. Breathe</h3>
+      <h2>Explore. Live. Breathe</h2>
       <br />
       <hr />
       <br />

@@ -1,0 +1,18 @@
+.practice-link {
+  font-family: "indie-flower";
+  transition: 0.2s;
+}
+
+.practice-container {
+  display: none;
+}
+
+.bloom {
+  transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+  .practice {
+    width: 150px;
+  }
+}

@@ -1,29 +1,26 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import BlogPostList from './BlogPostList';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import BlogPostList from "./BlogPostList";
 
-class Blog extends Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      opacity: 0
-    }
-  }
+export default class Blog extends Component {
+  state = {
+    opacity: 0
+  };
 
-  fadeIn(){
+  fadeIn = () => {
     this.setState({
       opacity: 1
     });
-  }
+  };
 
-  componentDidMount(){
-    window.scrollTo(0, 0)
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <BlogPostList
-          fadeIn={this.fadeIn.bind(this)}
+          fadeIn={this.fadeIn}
           opacity={this.state.opacity}
           blogPostList={this.props.blogPostList}
           onBlogPostSelection={this.props.onBlogPostSelection}
@@ -39,5 +36,3 @@ Blog.propTypes = {
   onBlogPostSelection: PropTypes.func,
   selectedPost: PropTypes.string
 };
-
-export default Blog;

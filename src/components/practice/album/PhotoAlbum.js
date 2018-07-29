@@ -17,26 +17,26 @@ const PhotoAlbum = () => {
   return (
     <div className="gallery-row">
       <div className="gallery-column">
-        <img src={natali1} />
-        <img src={natali2} />
-        <img src={natali3} />
+        <img src={natali1} alt="..." />
+        <img src={natali2} alt="..." />
+        <img src={natali3} alt="..." />
       </div>
       <div className="gallery-column">
-        <img src={natali4} />
-        <img src={natali5} />
-        <img src={natali6} />
-      </div>
-
-      <div className="gallery-column">
-        <img src={natali7} />
-        <img src={natali8} />
-        <img src={natali9} />
+        <img src={natali4} alt="..." />
+        <img src={natali5} alt="..." />
+        <img src={natali6} alt="..." />
       </div>
 
       <div className="gallery-column">
-        <img src={natali10} />
-        <img src={natali11} />
-        <img src={natali12} />
+        <img src={natali7} alt="..." />
+        <img src={natali8} alt="..." />
+        <img src={natali9} alt="..." />
+      </div>
+
+      <div className="gallery-column">
+        <img src={natali10} alt="..." />
+        <img src={natali11} alt="..." />
+        <img src={natali12} alt="..." />
       </div>
     </div>
   );

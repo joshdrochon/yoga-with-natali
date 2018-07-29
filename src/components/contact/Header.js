@@ -16,13 +16,13 @@ const styles = {
   }
 };
 
-const Header = props => (
+const Header = ({ opacity, fadeIn }) => (
   <div style={styles.flexParent}>
     <div style={styles.flxImgC}>
       <img
-        onLoad={props.fadeIn}
+        onLoad={fadeIn}
         className="banner"
-        style={{ opacity: props.opacity }}
+        style={{ opacity: opacity }}
         alt="hands reaching out"
         src={require("./../../assets/images/contact/reach-out.jpg")}
       />
@@ -30,7 +30,7 @@ const Header = props => (
     <p
       id="contact-tagline"
       className="tagline active"
-      onClick={() => scroller()}
+      onClick={e => scroller(e, "contact-form")}
     >
       CONTACT US
     </p>
