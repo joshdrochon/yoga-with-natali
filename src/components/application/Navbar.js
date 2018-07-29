@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import compass from "./../../assets/images/utility/compass.png";
 import menuIcon from "./../../assets/images/utility/menu-icon.svg";
+import "./Navbar.css";
 
 $(() => {
   $("#menu").click(() => {
@@ -17,7 +18,7 @@ const Navbar = () => (
   <Fragment>
     <style>
       {`
-      #navbar{
+      .navbar{
         display: grid;
         grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
         font-size: calc(4px + 1.3vw);
@@ -31,19 +32,19 @@ const Navbar = () => (
         top: 0;
         left: 0;
       }
-      #navbar a, #logo {
+
+      .navbar a, #logo {
         color: #101010;
         text-decoration: none;
         line-height: 80px;
-        transition: text-shadow 0.2s ease-in-out;
-
       }
       #logo{
         font-size: 150%;
       }
-      #navbar a:hover:not(#logo){
+      .navbar a:hover:not(#logo){
         text-shadow: 0px 0px 25px dodgerblue;
       }
+
       #compass{
         vertical-align: middle;
         width: 60px;
@@ -59,7 +60,7 @@ const Navbar = () => (
       }
 
       @media(max-width: 700px){
-        #navbar{
+        .navbar{
           display: none;
         }
         #menu{
@@ -105,6 +106,7 @@ const Navbar = () => (
       .nav div:hover:not(#menu-btn){
         box-shadow: inset 6px 0 0 0 dodgerblue;
       }
+
       #menu-icon{
         width: 50px;
         height: 50px;
@@ -113,12 +115,20 @@ const Navbar = () => (
       }
     `}
     </style>
-    <div id="navbar">
+    <div className="navbar">
       <div>
         <Link to="/about">ABOUT</Link>
       </div>
-      <div>
-        <Link to="/practice">PRACTICE</Link>
+      <div className="dropdown">
+        <Link className="dropdown-btn" to="/practice">
+          PRACTICE
+        </Link>
+        <div className="dropdown-menu">
+          <Link to="/classes">Classes</Link>
+          <Link to="/photography">Album</Link>
+          <Link to="/retreats">Retreats</Link>
+          <Link to="/events">Events</Link>
+        </div>
       </div>
       <div>
         <Link id="logo" to="/">
